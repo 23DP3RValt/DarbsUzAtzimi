@@ -5,27 +5,42 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Fixed Header */
 header {
     position: fixed;
-    top: 0;
     width: 100%;
     background: rgb(255, 190, 121);
     text-align: center;
-    z-index: 1000;
 }
 
-/* Fixed Navigation Bar */
 nav {
     position: fixed;
-    top: 50px; /* Below the header */
+    top: 50px;
     width: 100%;
-    background: rgb(186, 59, 10);
+    background: linear-gradient(to top, rgb(212, 85, 0), rgb(255, 190, 121));
     padding: 10px;
-    z-index: 999;
 }
 
-/* Navigation Links */
+#navig1 {
+    border-radius: 10px;
+    background: url('images/garfild.png') no-repeat center;
+    background-size: cover;
+    height: 45px;
+    width: 100px;
+    padding-left: 3px;
+    color: rgb(66, 33, 19);
+}
+
+#navig2 {
+    background-color: rgb(151, 51, 38);
+    border-radius: 10px;
+    height: 45px;
+    width: 120px;
+    padding-left: 7px;
+    display: flex;
+    text-align: center;
+    color: rgb(255, 190, 121);
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -41,22 +56,21 @@ nav ul li a {
     color: white;
 }
 
-/* Fix Scrolling Issue */
 main {
-    padding-top: 86px; /* Pushes content down so it isn't hidden under header and nav */
+    padding-top: 86px;
 }
 
 section {
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     padding: 10px;
     border-bottom: 5px dotted rgb(66, 33, 19);
-    scroll-margin-top: 120px; /* Prevents sections from hiding under the nav */
+    scroll-margin-top: 120px;
 }
 
 #section1 {
-    height: 90vh;  /* Full viewport height */
+    height: 90vh;
     background: url('images/garfild.png') no-repeat center center;
-    background-size: cover;  /* Make sure the image covers the whole section */
+    background-size: cover;
     display: flex;
     color: rgb(3, 3, 3);
 }
@@ -71,7 +85,7 @@ section {
 }
 
 #section2 {
-    height: 90vh;  /* Full viewport height */
+    height: 90vh;
     background-color: rgb(255, 190, 121);
     background-size: cover;
     
@@ -113,6 +127,26 @@ section {
 #pagatavosana image{
     width: 100px;
     padding: 5px;
+}
+
+#section4 {
+    background-color: rgb(255, 190, 121);
+    color: rgb(66, 33, 19);
+}
+
+#cat-fact {
+    border:2px solid rgb(66, 33, 19);
+    background-color: rgb(255, 121, 32);
+    padding: 8px;
+    font-size: 25px;
+}
+
+#CatBtt {
+    background-color: rgb(151, 51, 38);
+    border-radius: 10px;
+    height: 45px;
+    width: 130px;
+    color: rgb(255, 190, 121);
 }
 
 footer {

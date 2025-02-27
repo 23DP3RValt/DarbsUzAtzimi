@@ -55,3 +55,16 @@ function toggleButtons() {
 document.addEventListener('DOMContentLoaded', function () {
     toggleButtons();
 });
+
+
+async function getCatFact() {
+    try {
+        const response = await fetch("https://catfact.ninja/fact");
+        const data = await response.json();
+        document.getElementById("cat-fact").innerText = data.fact;
+    } catch (error) {
+        console.error("Error fetching cat fact:", error);
+        document.getElementById("cat-fact").innerText = "Could not load cat fact. 😿";
+    }
+}
+getCatFact();
