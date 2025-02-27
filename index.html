@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lasagna</title>
+        <link rel="icon" type="image/jpg" href="src/images/logo.jpg">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="src/main.css">
+    </head>
+    <body>
+        <header>
+            <img src="src/images/logo.jpg" alt="logo" height="50px" style="border-radius: 50%;">
+            <img src="src/images/Screenshot 2025-02-26 180658.png" alt="Logo" height="50px">
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#section1"><button>Section 1</button></a></li>
+                <li><a href="#section2"><button>Section 2</button></a></li>
+                <li><a href="#section3"><button>Section 3</button></a></li>
+                <li><a href="#section4"><button>Section 4</button></a></li>
+            </ul>
+        </nav>
+    
+        <main>
+            <section id="section1">
+                <h1>Pagatavoto lazanju labāk apēst pašam, <br> nekā dot izdevību runcim</h1>
+            </section>
+            <section id="section2">
+                <div>
+                    <h2 style="padding: 10px; text-align: center; padding-bottom: 18px; font-size: 30px;">Nepieciešamās sastāvdaļas</h2>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <h4>Maltās gaļas pagatavošanai:</h4>
+                            </td>
+                            <td>
+                                <h4>Bešamel mērcei ar 2 veidu sieriem:</h4> 
+                            </td>
+                            <td rowspan="3">
+                                <img src="src/images/lasagna-recipe-11.jpg" alt="lasagna" width="200px" style="border-radius: 10px;">
+                                <img src="src/images/lasagna-recipe-46.jpg" alt="lasagna" width="200px" style="border-radius: 10px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li><b>1 kg</b> maltas cūkgaļas</li>
+                                    <li><b>820 g</b> tomātu gabaliņu savā sulā</li>
+                                    <li><b>2</b> vidēja izmēra sīpoli</li>
+                                    <li><b>1</b> paliela izmēra burkāns</li>
+                                    <li><b>2</b> ēdamkarotes tomātu pastas</li>
+                                    <li><b>4</b> ķiploka daiviņas</li>
+                                    <li>sāls + malti melnie pipari pēc garšas</li>
+                                    <li><b>30 g</b> sviesta cepšanai</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><b>800 ml</b> piena</li>
+                                    <li><b>50 g</b> kviešu miltu</li>
+                                    <li><b>40 g</b> sviesta</li>
+                                    <li><b>250 g</b> Holandes siera</li>
+                                    <li><b>150 g</b> Parmezāna siera</li>
+                                    <li>bsāls pēc garšas</li>
+                                    <li><b>1/4 tējk.</b> svaigi rīvēta muskatrieksta</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>+ 1</b> paka lazanjas makaronu</td>
+                            <td>Pagatavošanas laiks- <b>90 min.</b></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section id="section3">
+                <h2 style="padding: 10px; text-align: center; padding-bottom: 18px; font-size: 30px;">Pagatavošana pa soļiem</h2>
+                <div style=" padding: 20px;">
+                    <button id="prevBtn" onclick="changeStep(-1)"><b>Iepriekšējais solis</b></button>
+                    <button id="nextBtn" onclick="changeStep(1)"><b>Nākamais solis</b></button>
+                </div>
+                <div id="pagatavosana">
+                    <div id="step1" class="step active"><b>1. solis</b><br>Uz pannas izkausētā sviestā aši apcep kriksīšos sagrieztu sīpolu,
+                         tad pievieno un apcep nomizotu un sarīvētu burkānu, tad pannas saturam pievieno arī malto gaļu, maisot apcep un visu
+                          pārlej ar tomātu gabaliņiem savā sulā un iemaisa tomātu pastu. <br>
+                        <img src="src/images/1solis.jpg" alt="a" style="width: 200px; padding: 10px; border-radius: 20px;">
+                    </div>
+
+                    <div id="step2" class="step"><b>2. solis</b><br> Pannai uzliek vāku un tās saturu sautē kādas 10 - 15 minūtes. Pašās beigās
+                         iemaisa izspiestas ķiploka daiviņas, pievieno sāli un maltus melnos piparus. <br>
+                        <img src="src/images/2solis.jpg" alt="a" style="width: 200px; padding: 10px; border-radius: 20px;">
+                    </div>
+
+                    <div id="step3" class="step"><b>3. solis</b><br>Citā pannā gatavo otru mērci - izkausētā sviestā uz vidējas uguns maisot apcep
+                         miltus, tad pannu pa pusei nobīda no karstuma avota (vai vienkārši samazina karstumu) un leenītiņām, leeenītiņām pievieno
+                          pienu (tas jādara lēnām, lēnām un aktīvi maisot, lai neveidotos kunkuļi, bet beigu beigās mērce būtu viendabīga un krēmīga). <br>
+                        <img src="src/images/3-2solis.jpg" alt="a" style="width: 200px; padding: 10px; border-radius: 20px;">
+                        <img src="src/images/3solis.jpg" alt="a" style="width: 200px; padding: 10px; border-radius: 20px;">
+                    </div>
+
+                    <div id="step4" class="step"><b>4. solis</b><br>Kad pievienots viss piens, tad iemaisa sarīvētus Parmezāna un Holandes sierus (vienu
+                         saujiņu pataupa lazanjas pārkaisīšanai pirms cepšanas), sāli pēc garšas (ar tādu paprāvu šķipsniņu, manuprāt, būs gana) un svaigi rīvētu muskatriekstu. <br>
+                        <img src="src/images/4solis.jpg" alt="a" style="width: 200px; padding: 10px; border-radius: 20px;">
+                    </div>
+
+                    <div id="step5" class="step"><b>5. solis</b><br>Ķeras pie lazanjas sakārtošanas - apmēram 28 x 24 cm lielas cepampannas apakšā
+                         izlīdzina kādu kausiņu maltās gaļas mērces, virs tās izkārto lazanjas plāksnes, virs tām atkal liek maltās gaļas mērci, ko
+                          pārklāj ar sieraino bešamel mērci, tad atkal liek lazanjas plāksnes, atkārto gājienu ar abām mērcēm, tad uzstutē vēl trešo
+                           kārtu ar lazanjas plāksnēm un visbeidzot visu pārklāj ar balto mērci un pārber ar to atlikušo saujiņu sarīvēto sieru. <br>
+                        <img src="src/images/5-1solis.jpg" alt="a" style="width: 200px; padding: 10px; border-radius: 20px;">
+                        <img src="src/images/5-2solis.jpg" alt="a" style="width: 200px; padding: 10px; border-radius: 20px;">
+                        <img src="src/images/5-3solis.jpg" alt="a" style="width: 200px; padding: 10px; border-radius: 20px;">
+                        <img src="src/images/5-4solis.jpg" alt="a" style="width: 200px; padding: 10px; border-radius: 20px;">
+                    </div>
+
+                    <div id="step6" class="step"><b>6. solis</b><br>Pannu liek līdz 180°C sakarsētā cepeškrāsnī, lazanju gatavo apmēram 25 minūtes (šeit
+                         svarīga piezīme - lazanjas plāksnes ir atšķirīga biezuma, tāpēc vēlams pārliecināties, vai tās ir gatavas ap šo brīdi un, ja tomēr
+                          vēl nav, tad nedaudz vēl cepšanu paturpināt), tad cepeškrāsni pārregulē ventilatora režīmā un apbrūnina sierīgā sacepuma virspusi vēl apmēram 7 - 10 minūtes. <br>
+                          <img src="src/images/6-2solis.jpg" alt="a" style="width: 200px; padding: 10px; border-radius: 20px;">
+                          <img src="src/images/6solis.jpg" alt="a" style="width: 200px; padding: 10px; border-radius: 20px;">
+                    </div>
+
+                    <div id="step7" class="step"><b>7. solis</b><br>Izņem no krāsns, pirms griešanas atpūtina apmēram 15 - 20 minūtes (tad to būs iespējams
+                        daudz glītāk sadalīt), tad pasniedz. Lai laba apetīte daudziem vēderiem! <br>
+                        <img src="src/images/logo.jpg" alt="a" style="width: 300px; padding: 10px; border-radius: 20px;">
+                        <img src="src/images/7solis.jpg" alt="a" style="width: 200px; padding: 10px; border-radius: 20px;">
+                         
+                    </div>
+                </div>
+                
+            </section>
+    
+            <section id="section4">
+                <h2>Kaķu fakti</h2>
+            </section>
+        </main>
+    
+        <footer>
+            <p>&copy; 2025 My Website. All rights reserved.</p>
+        </footer>
+    
+    
+        <script src="src/Js/main.js" async defer></script>
+    </body>
+</html>

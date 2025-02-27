@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Fixed Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(255, 190, 121);
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Fixed Navigation Bar */
+nav {
+    position: fixed;
+    top: 50px; /* Below the header */
+    width: 100%;
+    background: rgb(186, 59, 10);
+    padding: 10px;
+    z-index: 999;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Fix Scrolling Issue */
+main {
+    padding-top: 86px; /* Pushes content down so it isn't hidden under header and nav */
+}
+
+section {
+    height: 100vh; /* Full viewport height */
+    padding: 10px;
+    border-bottom: 5px dotted rgb(66, 33, 19);
+    scroll-margin-top: 120px; /* Prevents sections from hiding under the nav */
+}
+
+#section1 {
+    height: 90vh;  /* Full viewport height */
+    background: url('images/garfild.png') no-repeat center center;
+    background-size: cover;  /* Make sure the image covers the whole section */
+    display: flex;
+    color: rgb(3, 3, 3);
+}
+
+#section1 h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: rgb(66, 33, 19);
+    width: 50%;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+#section2 {
+    height: 90vh;  /* Full viewport height */
+    background-color: rgb(255, 190, 121);
+    background-size: cover;
+    
+    color: rgb(66, 33, 19);
+}
+#section2 table{
+    padding-left: 50px;
+    height: 300px;
+   
+}
+
+#section2 table td{
+    padding: 20px;
+    border: solid 2px rgb(186, 59, 10);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(218, 153, 84);
+    border-radius: 10px;
+}
+
+#section3 {
+    background-color: rgb(255, 190, 121);
+    color: rgb(66, 33, 19);
+}
+
+#prevBtn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(232, 119, 46);
+    border: 3px solid rgb(66, 33, 19);
+}
+
+#nextBtn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(232, 119, 46);
+    border: 3px solid rgb(66, 33, 19);
+}
+
+#pagatavosana image{
+    width: 100px;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    background: lightgray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.step {
+    display: none;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.active {
+    display: block;
+}
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
