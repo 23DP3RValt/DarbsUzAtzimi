@@ -35,12 +35,37 @@ nav {
     background-color: rgb(151, 51, 38);
     border-radius: 10px;
     height: 45px;
-    width: 120px;
-    padding-left: 7px;
+    width: 150px;
     display: flex;
     text-align: center;
+    justify-content: center;
     color: rgb(255, 190, 121);
+
 }
+#navig3 {
+    background-color: rgb(151, 51, 38);
+    border-radius: 10px;
+    height: 45px;
+    width: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 190, 121);
+
+}
+#navig4 {
+    background-color: rgb(151, 51, 38);
+    border-radius: 10px;
+    height: 45px;
+    width: 190px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 190, 121);
+
+}
+
+
 
 nav ul {
     list-style: none;
@@ -148,7 +173,7 @@ section {
     background-color: rgb(151, 51, 38);
     border-radius: 10px;
     height: 45px;
-    width: 130px;
+    width: 200px;
     color: rgb(255, 190, 121);
 }
 
