@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -61,7 +62,6 @@ main {
 }
 
 section {
-    height: 100vh;
     padding: 10px;
     border-bottom: 5px dotted rgb(66, 33, 19);
     scroll-margin-top: 120px;
@@ -132,13 +132,16 @@ section {
 #section4 {
     background-color: rgb(255, 190, 121);
     color: rgb(66, 33, 19);
+    height: 70vh;
 }
 
 #cat-fact {
     border:2px solid rgb(66, 33, 19);
     background-color: rgb(255, 121, 32);
-    padding: 8px;
+    margin-top: 10px;
     font-size: 25px;
+    border-radius: 10px;
+    
 }
 
 #CatBtt {
@@ -152,8 +155,6 @@ section {
 footer {
     text-align: center;
     background: lightgray;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 .step {
